@@ -1,3 +1,5 @@
-pre, code {
+pre, code,
+.cm-editor, .cm-line, .cm-content // Codemirror
+{
     font-family: monospace !important;
 }

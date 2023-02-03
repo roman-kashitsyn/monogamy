@@ -34,9 +34,11 @@ function fixStyleSheets() {
     }
 }
 
-try {
-    fixStyleSheets();
-} catch (e) {
-    // ignore errors
-}
-traverse(document.body);
+window.addEventListener("load", function () {
+    try {
+        fixStyleSheets();
+    } catch (e) {
+        // ignore errors
+    }
+    traverse(document.body);
+});
